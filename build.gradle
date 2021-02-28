@@ -13,6 +13,9 @@ sourceSets {
         java {
             srcDirs = ['src']
         }
+        resources {
+            srcDirs = ['res']
+        }
     }
 }
 dependencies {

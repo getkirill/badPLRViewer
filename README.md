@@ -16,3 +16,5 @@ You'll need to put in your file paths in src/one/Main.java
 License CC BY-NC-SA 3.0
 
 -- Photon
+# Licensing
+ - Package `one` is licensed by Photon under CC-BY-NC-SA 2.0

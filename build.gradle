@@ -1,0 +1,20 @@
+plugins {
+    id 'java-library'
+}
+
+group 'com.kraskaska.terraria.plr'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+}
+dependencies {
+
+}

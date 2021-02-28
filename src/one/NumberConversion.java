@@ -1,4 +1,6 @@
 package one;
+import com.kraskaska.terraria.plr.ItemsCsv;
+
 import java.awt.Color;
 
 public class NumberConversion {
@@ -192,7 +194,7 @@ public class NumberConversion {
 		quantity = item.getQuantity();
 		prefixID = item.getPrefixID();
 		
-		String output = prefixID + " prefix " + quantity + "x " + itemID;
+		String output = prefixID + " prefix " + quantity + "x " + ItemsCsv.itemsById.get(itemID);
 		
 		if (quantity == 0) {
 			

@@ -17,4 +17,5 @@ License CC BY-NC-SA 3.0
 
 -- Photon
 # Licensing
- - Package `one` is licensed by Photon under CC-BY-NC-SA 2.0
+ - Package [`one`](src/one) is licensed by Photon under CC-BY-NC-SA 2.0
+ - Package [`com.kraskaska.terraria.plr`](src/com/kraskaska/terraria/plr) is licensed under GPLv3

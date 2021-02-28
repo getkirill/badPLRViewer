@@ -1,5 +1,7 @@
 package one;
 
+import com.kraskaska.terraria.plr.ItemsCsv;
+
 public class ResearchItem extends Item{
 	private String itemName;
 	

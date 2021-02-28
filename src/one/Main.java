@@ -9,6 +9,8 @@ import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
 import java.awt.Color;
+import java.util.Arrays;
+import java.util.NoSuchElementException;
 
 public class Main {
 
@@ -19,8 +21,7 @@ public class Main {
 		 * Extracts the raw player data.
 		 * The player data must be decrypted with AES-128 before being used.
 		 */
-		
-		
+		if(args.length == 0) throw new IllegalArgumentException("No file specified");
 		// Class Instances
 		ExtractPlayerData epd = new ExtractPlayerData();
 		ReadPlayerData rpd = new ReadPlayerData();
@@ -39,10 +40,10 @@ public class Main {
 		// String debugpath = "";
 		
 		// Decrypted file file path.
-		String outputpath = "";
+//		String outputpath = "";
 		
 		// Input file file path.
-		byte[] data = epd.ExtractRawData("");
+		byte[] data = epd.ExtractRawData(args[0]);
 		
 		
 		// DEBUG
@@ -56,9 +57,9 @@ public class Main {
 		byte[] decrypted = epd.DecryptRawData(data, pass);
 		
 		// Decrypted File
-		try (FileOutputStream stream = new FileOutputStream(outputpath)) {
-		    stream.write(decrypted);
-		}
+//		try (FileOutputStream stream = new FileOutputStream(outputpath)) {
+//		    stream.write(decrypted);
+//		}
 		
 		System.out.println("Decryption successful.");
 		

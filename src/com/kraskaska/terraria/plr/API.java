@@ -23,6 +23,14 @@ import static one.Main.printItem;
 public class API {
     private ReadPlayerData playerData;
     private int[] decryptedData;
+
+    /**
+     * @return Interface to modify PLR
+     */
+    public Data getData() {
+        return data;
+    }
+
     private Data data;
 //    public static void main(String[] args) throws Exception {
 //        API api = new API(Paths.get("Player.plr").toString());
@@ -51,7 +59,7 @@ public class API {
      * @author Kraskaska
      * @version 1.2
      */
-    public class Data extends ReadPlayerData{
+    public static class Data extends ReadPlayerData{
         private ReadPlayerData readPlayerData;
         private int[] decryptedData;
         private Data(ReadPlayerData data, int[] decryptedData){
